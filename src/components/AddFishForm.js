@@ -10,15 +10,17 @@ class AddFishForm extends React.Component{
     createFish=(event)=>{
         event.preventDefault();
         //stop the form from submitting
-        const fish={
-            name: this.nameRef.value.value,
-            price: parseFloat(this.priceRef.value.value),
-            status:this.statusRef.value.value,
-            desc:this.descRef.value.value,
-            image:this.imageRef.value.value
+        const fish = {
+            name: this.nameRef.current.value,
+            price: parseFloat(this.priceRef.current.value),
+            status:this.statusRef.current.value,
+            desc:this.descRef.current.value,
+            image:this.imageRef.current.value
 
         };
-        console.log(fish);
+  this.props.addFish(fish);
+  //refresh the form
+  event.currentTarget.reset();
     };
     render(){
         return (

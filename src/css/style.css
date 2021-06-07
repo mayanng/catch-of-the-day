@@ -260,7 +260,7 @@
     text-align: center;
   }
   header.top h1 {
-    font-size: 3.4rem;
+    font-size: 3.2 rem;
     line-height: 0.7;
     display: -webkit-box;
     display: flex;
@@ -271,7 +271,7 @@
   header.top h1 .ofThe {
     display: -webkit-box;
     display: flex;
-    font-size: 3rem;
+    font-size: 0.2rem;
     color: #f5a623;
     -webkit-box-pack: center;
             justify-content: center;
@@ -446,7 +446,7 @@
   .fish-edit input,
   .fish-edit textarea,
   .fish-edit select {
-    width: 33.33%;
+    width: 30.14%;
     padding: 10px;
     line-height: 1;
     font-size: 1.2rem;
