@@ -1,7 +1,8 @@
 import Rebase from "re-base";
-import firebase from "firebase";
+import firebase from "firebase/app";
+import "@firebase/database";
 
-const firebaseApp =firebase.intializeApp({
+const firebaseApp =firebase.initializeApp({
     apiKey: "AIzaSyAU9DzZ2UJ8jLHw2vVg-K6zBpuMx6AwHko",
     authDomain: "catch-of-the-day-mayank-fabef.firebaseapp.com",
     databaseURL: "https://catch-of-the-day-mayank-fabef-default-rtdb.firebaseio.com",

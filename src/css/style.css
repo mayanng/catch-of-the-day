@@ -1,4 +1,4 @@
- /* .order-enter {
+ /*.order-enter {
     -webkit-transform: translateX(-120%);
             transform: translateX(-120%);
     -webkit-transition: 0.5s;
@@ -227,7 +227,7 @@
   html {
     font-size: 62.5%;
   }
-*/  body {
+*/body {
     background: #d4d4d4;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
