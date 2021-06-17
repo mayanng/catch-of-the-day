@@ -1,4 +1,4 @@
- /*.order-enter {
+ .order-enter {
     -webkit-transform: translateX(-120%);
             transform: translateX(-120%);
     -webkit-transition: 0.5s;
@@ -50,7 +50,7 @@
     -webkit-transform: translateY(-100%) scale(3);
             transform: translateY(-100%) scale(3);
   }
-   @font-face { 
+  /* @font-face { 
     font-family: "haymakerregular";
     src: url("./fonts/haymaker-webfont.eot");
     src: url("./fonts/haymaker-webfont.eot?#iefix") format("embedded-opentype"), url("./fonts/haymaker-webfont.woff") format("woff"), url("./fonts/haymaker-webfont.ttf") format("truetype"), url("./fonts/haymaker-webfont.svg#haymakerregular") format("svg");

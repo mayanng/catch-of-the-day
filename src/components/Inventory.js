@@ -20,7 +20,7 @@ class Inventory extends React.Component {
 
   state = {
     uid: null,
-    owner: null,
+    owner: null
   };
   componentDidMount() {
     firebase.auth().onAuthStateChanged(user=> {
@@ -42,7 +42,7 @@ class Inventory extends React.Component {
     //3 set the state of the inventory component to reflect the current user
     this.setState({
       uid: authData.user.uid,
-      owner: store.owner || authData.user.uid,
+      owner: store.owner || authData.user.uid
     });
     // console.log(authData);
   };
