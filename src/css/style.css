@@ -586,12 +586,12 @@
   input[type=submit].facebook,
   button.twitter,
   input[type=submit].twitter {
-    border: 0;
+    border: 1;
     display: block;
     margin-bottom: 2rem;
     width: 100%;
     color: #fff;
-    padding: 2rem;
+    padding: 1rem;
   }
   button.github,
   input[type=submit].github {
@@ -601,6 +601,14 @@
   input[type=submit].github:after {
     background: #5cc437;
   }
+  button.twitter,
+  input[type=submit].twitter {
+    background: #dd5e9e;
+  }
+  button.twitter:after,
+  input[type=submit].twitter:after {
+    background: #d02cb5;
+  } 
   button.facebook,
   input[type=submit].facebook {
     background: #3864a3;
@@ -609,14 +617,7 @@
   input[type=submit].facebook:after {
     background: #2d5082;
   }
-  button.twitter,
-  input[type=submit].twitter {
-    background: #5ea9dd;
-  }
-  button.twitter:after,
-  input[type=submit].twitter:after {
-    background: #2c8dd0;
-  } */
+ 
    .store-selector { 
     background: #fff;
     max-width: 500px;

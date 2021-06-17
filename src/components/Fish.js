@@ -1,39 +1,39 @@
 import React from "react";
 import PropTypes from "prop-types";
-import{formatPrice} from '../helpers';
+import { formatPrice } from "../helpers";
 
-
-class Fish extends React.Component{
-    static propTypes={
-      details: PropTypes.shape({
-          image: PropTypes.string,
-          name: PropTypes.string,
-          desc: PropTypes.string,
-          status: PropTypes.string,
-          price: PropTypes.number,
-      }),
-      addToOrder: PropTypes.func,
-    }
-    render(){
-        const{image, name, price, desc, status} =this.props.details;
-        const isAvailable=status==='available';
-        return (
-        <li className="menu-fish">
-        <img src={image} alt={name}/>
+class Fish extends React.Component {
+  static propTypes = {
+    details: PropTypes.shape({
+      image: PropTypes.string,
+      name: PropTypes.string,
+      desc: PropTypes.string,
+      status: PropTypes.string,
+      price: PropTypes.number,
+    }),
+    addToOrder: PropTypes.func,
+    index: PropTypes.string,
+  };
+  render() {
+    const { image, name, price, desc, status } = this.props.details;
+    const isAvailable = status === "available";
+    return (
+      <li className="menu-fish">
+        <img src={image} alt={name} />
         <h4 className="fish-name">
-            {name}
-            <span className="price">{formatPrice(price)}</span>
+          {name}
+          <span className="price">{formatPrice(price)}</span>
         </h4>
         <p>{desc}</p>
-        <button disabled={!isAvailable}onClick={() =>  this.props.addToOrder(this.props.index) } >
-        {isAvailable ? "Add To Order" :"Sold Out"}
+        <button
+          disabled={!isAvailable}
+          onClick={() => this.props.addToOrder(this.props.index)}
+        >
+          {isAvailable ? "Add To Order" : "Sold Out"}
         </button>
-            
-            </li>
-           
-        );
-
-    }
+      </li>
+    );
+  }
 }
 
 export default Fish;
